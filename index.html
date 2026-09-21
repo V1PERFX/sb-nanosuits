@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nanosuit Locker — Stellar Blade</title>
+<meta name="description" content="Checklist das 126 nanosuits de Stellar Blade, na ordem do inventário, com local de obtenção e progresso salvo no navegador.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="hud">
+  <div class="hud__bar">
+    <div class="hud__id">
+      <span class="hud__eyebrow">Stellar Blade</span>
+      <h1>Nanosuit Locker</h1>
+    </div>
+  </div>
+
+  <div class="painel">
+    <div class="painel__num">
+      <span class="painel__count"><strong id="contador">0</strong><span id="total">/126</span></span>
+      <span class="painel__legenda" id="escopo-label">coletadas nesta run</span>
+    </div>
+    <div class="medidor" role="img" aria-label="Progresso da coleta" id="medidor-wrap">
+      <div class="medidor__trilho"><div class="medidor__fill" id="medidor"></div></div>
+      <div class="medidor__marcas"><span>0</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+    </div>
+    <ul class="tiles" id="tiles"></ul>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <details class="ajuda ajuda--collab">
+    <summary>Colaboração Stellar Blade × Bayonetta <span class="ajuda__tag">ainda não lançada</span></summary>
+    <div class="ajuda__corpo">
+      <div class="collab">
+        <img src="assets/img/Stellar_Blade_x_Bayonetta.webp" alt="Arte da colaboração Stellar Blade × Bayonetta" width="1920" height="1080" loading="lazy" decoding="async">
+      </div>
+      <p class="ajuda__nota">As suits dessa collab entram na lista quando forem reveladas.</p>
+    </div>
+  </details>
+
+
+  <section class="controles" aria-label="Filtros">
+    <div class="seg" role="group" aria-label="Run atual">
+      <button type="button" class="seg__btn" data-run="1">1ª run</button>
+      <button type="button" class="seg__btn" data-run="2">NG+</button>
+      <button type="button" class="seg__btn" data-run="3">NG++</button>
+    </div>
+
+    <div class="campo campo--busca">
+      <label class="sr-only" for="busca">Buscar nanosuit ou local</label>
+      <input type="search" id="busca" placeholder="Buscar suit, local ou NPC…" autocomplete="off">
+    </div>
+
+    <div class="campo">
+      <label class="sr-only" for="regiao">Região</label>
+      <select id="regiao"></select>
+    </div>
+
+    <div class="campo">
+      <label class="sr-only" for="ordem">Agrupamento</label>
+      <select id="ordem">
+        <option value="inventario">Ordem do inventário</option>
+        <option value="regiao">Agrupar por região</option>
+      </select>
+    </div>
+
+    <label class="switch"><input type="checkbox" id="ocultar"><span>Ocultar coletadas</span></label>
+
+    <button type="button" class="btn btn--ghost" id="zerar">Zerar progresso</button>
+  </section>
+
+  <details class="ajuda">
+    <summary>Como ler os tiers</summary>
+    <div class="ajuda__corpo">
+      <ul id="legenda"></ul>
+      <p class="ajuda__nota">Progresso salvo neste navegador. <span id="salvo-em"></span></p>
+    </div>
+  </details>
+
+  <p class="aviso">
+    Pegue todas as suits ligadas a side-missions de <strong>Xion</strong> antes de viajar para o Orbital Elevator (Spire 4).
+  </p>
+
+  <div id="lista" class="lista"></div>
+
+  <p class="vazio" id="vazio" hidden>Nenhuma nanosuit bate com esses filtros.</p>
+</main>
+
+<footer class="rodape">
+  <p class="rodape__nota">
+    Os nomes das suits estão em inglês porque vieram assim do guia. Ainda não instalei o jogo
+    de novo só pra conferir a tradução, então vou trocando pelos nomes em português conforme
+    jogo na versão de Switch 2.
+  </p>
+  <p>
+    Lista e locais de obtenção baseados no guia de
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3593187749" target="_blank" rel="noopener">Crimsomrider na Steam</a>.
+  </p>
+  <p>
+    Artes das nanosuits da
+    <a href="https://stellarblade.fandom.com/wiki/Stellar_Blade_Wiki" target="_blank" rel="noopener">Stellar Blade Wiki</a>.
+  </p>
+</footer>
+
+<dialog class="visor" id="visor">
+  <button type="button" class="visor__fechar" data-fechar aria-label="Fechar">✕</button>
+  <div class="visor__quadro"><img src="" alt=""></div>
+  <h2></h2>
+</dialog>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

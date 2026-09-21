@@ -1,0 +1,34 @@
+# Normaliza tudo que for texto para LF no repositório e no working tree.
+* text=auto eol=lf
+
+# Fontes do site
+*.html  text eol=lf diff=html
+*.css   text eol=lf diff=css
+*.js    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.svg   text eol=lf
+
+# Arquivos que precisam de CRLF na máquina Windows
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+
+# Binários: nunca converter fim de linha nem tentar diff
+*.webp  binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.avif  binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.mp4   binary
+*.webm  binary
+*.zip   binary
+
+# Não conta as artes como código nas estatísticas de linguagem do GitHub
+assets/img/** linguist-vendored
