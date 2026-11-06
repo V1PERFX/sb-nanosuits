@@ -34,7 +34,7 @@ index.html            marcação da página
 assets/css/style.css  tema escuro e layout
 assets/js/data.js     as 130 nanosuits: nome, tier, região, local
 assets/js/app.js      filtros, render e persistência
-assets/img/           arte de cada suit + banner da collab
+assets/img/           arte de cada suit
 ```
 
 Pra corrigir ou acrescentar uma suit, edite só o `assets/js/data.js` — a lista é a única fonte de verdade da página.

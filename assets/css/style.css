@@ -255,19 +255,6 @@ input[type="search"]::placeholder { color: var(--dim); }
 
 .vazio { color: var(--dim); text-align: center; padding: 40px 0; }
 
-/* ---------- Banner da colaboração ---------- */
-
-.ajuda--collab { margin-block: 18px 0; }
-
-.collab {
-  display: block;
-  margin-top: 14px;
-  border: 1px solid var(--line);
-  line-height: 0;
-}
-.collab:hover { border-color: var(--accent); }
-.collab img { width: 100%; height: auto; }
-
 /* ---------- Bloco recolhível de ajuda ---------- */
 
 .ajuda { border: 1px solid var(--line); background: var(--surface); margin-bottom: 18px; }
@@ -285,13 +272,6 @@ input[type="search"]::placeholder { color: var(--dim); }
 }
 .ajuda[open] > summary::before { content: "\2212"; }
 .ajuda > summary:hover { color: var(--accent); }
-
-.ajuda__tag {
-  font-size: 10px; letter-spacing: .16em;
-  color: var(--accent);
-  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
-  padding: 3px 7px;
-}
 
 .ajuda__corpo { padding: 4px 14px 16px; border-top: 1px solid var(--line); }
 .ajuda__corpo ul {
