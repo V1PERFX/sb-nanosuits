@@ -1,6 +1,6 @@
 # Nanosuit Locker — Stellar Blade
 
-Checklist das 126 nanosuits de Stellar Blade, na mesma ordem em que aparecem na tela de inventário do jogo.
+Checklist das 130 nanosuits de Stellar Blade, na mesma ordem em que aparecem na tela de inventário do jogo.
 Site estático, sem build e sem dependências: é só abrir o `index.html` no navegador.
 
 ## Como usar
@@ -23,7 +23,7 @@ O progresso fica no `localStorage` do navegador: sobrevive a fechar a aba, mas �
 | 🔸 | NG+ | Obtenível no NG+, se a variante da 1ª run já foi coletada |
 | 🔺 | NG++ | Obtenível no NG++, se a variante de NG+ já foi coletada |
 | ◽ | Requisito | Liberada ao cumprir um requisito específico (boss challenge, fim da história…) |
-| ♻️ | DLC | Exige a compra do DLC correspondente |
+| ♻️ | DLC | Vem do DLC correspondente (pago ou gratuito) |
 
 Lembrete que o site também mostra: **pegue as suits ligadas a side-missions de Xion antes de viajar para o Orbital Elevator (Spire 4).**
 
@@ -32,7 +32,7 @@ Lembrete que o site também mostra: **pegue as suits ligadas a side-missions de 
 ```
 index.html            marcação da página
 assets/css/style.css  tema escuro e layout
-assets/js/data.js     as 126 nanosuits: nome, tier, região, local
+assets/js/data.js     as 130 nanosuits: nome, tier, região, local
 assets/js/app.js      filtros, render e persistência
 assets/img/           arte de cada suit + banner da collab
 ```
@@ -51,5 +51,3 @@ Estão todos em inglês, do jeito que vieram do guia original. Ainda não instal
 ## Imagens
 
 Cada linha da lista puxa `assets/img/<nome exato da suit>.webp` — o nome do arquivo tem que bater com o campo `n` do `data.js`, acentos e parênteses inclusos. Clicar na arte abre a imagem grande; clicar em qualquer outro ponto da linha marca a suit.
-
-`Stellar_Blade_x_Bayonetta.webp` é o banner da colaboração ainda não lançada, num bloco recolhido no topo da página. Quando as suits dessa collab forem reveladas, é só adicionar as entradas no `data.js` e as artes com o nome correspondente.

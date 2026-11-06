@@ -8,7 +8,7 @@ const TIERS = {
   ng1:  { sym: '🔸', nome: 'NG+',       desc: 'Obtenível no NG+, se a variante da 1ª run já foi coletada' },
   ng2:  { sym: '🔺', nome: 'NG++',      desc: 'Obtenível no NG++, se a variante de NG+ já foi coletada' },
   req:  { sym: '◽',  nome: 'Requisito', desc: 'Liberada ao cumprir um requisito específico' },
-  dlc:  { sym: '♻️', nome: 'DLC',       desc: 'Exige a compra do DLC correspondente' }
+  dlc:  { sym: '♻️', nome: 'DLC',       desc: 'Vem do DLC correspondente (pago ou gratuito)' }
 };
 
 /* Em qual run cada tier passa a ser obtenível */
@@ -140,5 +140,9 @@ const NANOSUITS = [
   { n: 'Elysion Combat Uniform', t: 'dlc', r: 'DLC', d: 'Goddess Of Victory: Nikke DLC' },
   { n: 'Never Look Back', t: 'dlc', r: 'DLC', d: 'Goddess Of Victory: Nikke DLC' },
   { n: 'Missing Link', t: 'dlc', r: 'DLC', d: 'Goddess Of Victory: Nikke DLC' },
-  { n: 'Cooling Suit', t: 'dlc', r: 'DLC', d: 'Goddess Of Victory: Nikke DLC' }
+  { n: 'Cooling Suit', t: 'dlc', r: 'DLC', d: 'Goddess Of Victory: Nikke DLC' },
+  { n: 'Couture Bullet (Bayonetta)', t: 'dlc', r: 'DLC', d: 'Bayonetta DLC' },
+  { n: 'Couture Bullet (Nun)', t: 'dlc', r: 'DLC', d: 'Bayonetta DLC' },
+  { n: 'Couture Bullet (Jeanne)', t: 'dlc', r: 'DLC', d: 'Bayonetta DLC' },
+  { n: 'Couture Bullet (Black Tresses)', t: 'dlc', r: 'DLC', d: 'Bayonetta DLC' }
 ];
