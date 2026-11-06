@@ -23,7 +23,7 @@ O progresso fica no `localStorage` do navegador: sobrevive a fechar a aba, mas �
 | 🔸 | NG+ | Obtenível no NG+, se a variante da 1ª run já foi coletada |
 | 🔺 | NG++ | Obtenível no NG++, se a variante de NG+ já foi coletada |
 | ◽ | Requisito | Liberada ao cumprir um requisito específico (boss challenge, fim da história…) |
-| ♻️ | DLC | Vem do DLC correspondente (pago ou gratuito) |
+| ♻️ | DLC | Vem do DLC correspondente |
 
 Lembrete que o site também mostra: **pegue as suits ligadas a side-missions de Xion antes de viajar para o Orbital Elevator (Spire 4).**
 
